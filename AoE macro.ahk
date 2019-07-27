@@ -56,7 +56,8 @@ loop {
 			newMouseX := 1
 		}
 		if(newMouseY == 0){
-			newMouseY := 1
+			; by setting this to 60 the default mode is whatever is in the top position, so in this case only pressing and releasing q will result in q-q, or choiceNumber 3, which is a house
+			newMouseY := 60
 		}
 		
 		;time to get the arctangent based on x and y offset values (newMouseX newMouseY)
